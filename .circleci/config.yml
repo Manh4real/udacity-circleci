@@ -2,11 +2,13 @@
 # Stacks detected: deps:node:reactnd-contacts-server,package_manager:yarn:
 version: 2.1
 orbs:
-  node: circleci/node@5:14.15.0
+  node: circleci/node@5
 jobs:
   build-node:
     # Build node project
-    executor: node/default
+    executor:
+      name: node/default
+      tag: 14.15.0
     working_directory: ~/project/reactnd-contacts-server
     steps:
       - checkout:

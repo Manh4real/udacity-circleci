@@ -2,7 +2,7 @@
 # Stacks detected: deps:node:reactnd-contacts-server,package_manager:yarn:
 version: 2.1
 orbs:
-  node: circleci/node@5
+  node: circleci/node@5:14.15.0
 jobs:
   build-node:
     # Build node project
@@ -33,7 +33,7 @@ jobs:
       # Replace this with steps to deploy to users
       - run:
           name: deploy
-          command: '#e.g. ./deploy.sh'
+          command: "#e.g. ./deploy.sh"
 workflows:
   build:
     jobs:
